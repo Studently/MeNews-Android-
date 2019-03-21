@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用来在NavigationVIew中显示具体的菜单项，包括电话、设置、退出选项-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--checkableBehavior="single"表示组中的菜单只能单选-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/collection"
+            android:title="@string/nav_collection"/>
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting"
+            android:title="@string/nav_setting"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/exit"
+            android:title="@string/nav_exit"/>
+
+    </group>
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ly.menews.view.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--删除按钮-->
+        <TextView
+            android:id="@+id/collection_tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/collection_layout_content"
+            android:background="@drawable/btn_click_red_bg"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="#DDFFFFFF" />
+
+        <RelativeLayout
+            android:id="@+id/collection_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <!--图标-->
+            <ImageView
+                android:id="@+id/collection_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/collection_img"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <!--名称-->
+                <TextView
+                    android:id="@+id/collection_news_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/collection_news_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2019年3月12日"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="5dp"/>
+
+                    <TextView
+                        android:id="@+id/collection_news_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜狐新闻"
+                        android:textSize="10dp"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="5dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</com.example.ly.menews.view.SlidingButtonView>

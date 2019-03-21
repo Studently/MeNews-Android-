@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include layout="@layout/title"
+        android:id="@+id/account_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/update_pwd"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="@string/update_pwd" />
+
+        <EditText
+            android:id="@+id/update_pwd_confirm"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/update_pwd"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/ConfirmPwd" />
+
+        <!--注册、取消按钮-->
+        <Button
+            android:id="@+id/account_confirm"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_pwd_confirm"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/account_confirm"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="#1896f7"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

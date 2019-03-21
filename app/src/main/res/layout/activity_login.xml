@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+
+        <!--账号-->
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawableTint="@color/colorPrimary"
+            android:hint="@string/AccountHint"
+            android:inputType="textPersonName" />
+
+        <!--密码-->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/account"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:drawableTint="@color/colorPrimary"
+            android:ems="10"
+            android:hint="@string/Password"
+            android:inputType="textPassword" />
+
+        <!--记住密码-->
+        <CheckBox
+            android:id="@+id/login_remember"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/password"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:checked="false"
+            android:textColor="@color/black"
+            android:text="@string/RememberPwd"
+            android:textSize="15sp" />
+
+        <!--自动登录-->
+        <CheckBox
+            android:id="@+id/login_auto"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/login"
+            android:layout_toEndOf="@+id/login"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:checked="false"
+            android:text="@string/AutoLogIn"
+            android:textSize="15sp" />
+
+        <!--登录注册按钮-->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/password"
+            android:layout_alignTop="@+id/login"
+            android:layout_marginEnd="30dp"
+            android:background="#19ee92"
+            android:gravity="center"
+            android:text="@string/Register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_remember"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:background="#9ca1f1"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/visitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_remember"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/VisitorHint"
+            android:textColor="@color/green"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

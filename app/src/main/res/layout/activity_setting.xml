@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zsg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebef"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"
+        android:id="@+id/setting_title"/>
+
+    <com.example.ly.menews.view.Item_view
+        android:layout_marginTop="20dp"
+        android:id="@+id/setting_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@drawable/setting_account"
+        zsg:show_text="账号设置" />
+
+
+
+    <com.example.ly.menews.view.Item_view
+        android:id="@+id/setting_buffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="true"
+        zsg:show_leftimg="@drawable/buffer"
+        zsg:show_text="清除缓存"
+        zsg:show_num="11Mb"
+        android:layout_marginTop="5dp"/>
+
+    <com.example.ly.menews.view.Item_view
+        android:id="@+id/setting_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        zsg:show_bottomline="false"
+        zsg:show_leftimg="@drawable/update"
+        zsg:show_text="版本更新"
+        zsg:show_num="1.0"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/setting_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="退出"
+        android:textColor="@color/black"
+        android:background="@color/red"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>
